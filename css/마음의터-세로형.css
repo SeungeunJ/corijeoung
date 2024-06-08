@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*fonts*/
+@font-face {
+  font-family: 'GothicA1-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+summary.title{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}
+/*p.title-number{font-family: 'GothicA1-ExtraBold'; font-size:20pt; line-height:35pt;}
+p.title-regular{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}*/
+p.text-regular{font-family: 'YESGothic-Regular'; font-size:12pt; line-height:17pt;}
+
+
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+width: 20vw; top: -15pt; left: 80vw;}
+
+
+/*본문*/
+img.image-regular{margin-left: 0.6vw; width: 95vw;}
+/*script.js-regular{margin-left: 4vw; width: 87vw;}*/
+canvas{flex:100%; position: auto;}
+#sketch-holder{display: flex; margin-left: 0.6vw; width:95vw !important;}
+p[id="script안내"]{text-align: center;}
+section.caption{margin-left: 0; width: 87vw;}
+
+/*링크*/
+a.black-line{color: black;}
+
+/*여백*/
+article.space20pt{height: 20pt;}
+article.space40pt{height: 40pt;}
+article.vh15{height: 15vh;} 
+article.vh20{height: 20vh;}
+article.vh25{height: 25vh;}
+article.vh30{height: 30vh;}
+
+
+/*footnote*/
+section.footnote{margin-left: 4vw; width: 87vw;}
+sub.footnote{color:grey; font-size: 5pt; margin-right: 20pt;} a.footnote{color:grey; text-decoration: none;}
+/*hr.footnote-line{}*/
+p.footnote{color: grey; font-size:9pt; line-height:11pt;}
+
+
+/*added information**/
+section.added-information{margin-top: 45pt; width: 90vw; margin-left: 1.5vw; margin-right: 6vw;}
+section.added-information-list{
+  position: -webkit-sticky; position: sticky; top:0;
+  padding-top: 2vh;
+  display: flex; justify-content: space-between; flex-wrap: wrap;
+  font-size: 18pt; line-height: 25pt;}
+p.added-information-title{font-size: 15pt;}
+a.added-information-list{text-decoration: underline; color:black; font-size: 9.5pt;}
+img.image-regular-in-section{margin-left: 1vw; width: 87vw;}
+img.half-in-section{margin-left: 1vw; width:42.5vw;}
+
+
+
+
+/*밑여백*/
+section.margin-bottom{height: 30pt;}

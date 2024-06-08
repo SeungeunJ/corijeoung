@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{font-family: 'YESGothic-Regular';}
+
+
+
+
+div.information-area{
+  position: absolute;
+  top:76vh;
+  width: 100vw;
+  /*background-color: black;*/
+  color: white;
+}
+/*세로 간격 배치*/
+div.title{margin-bottom:0;} div.participants-info{margin-top:0;}
+div.leave-comments{margin-top: 23pt;}
+div.recommend-next{margin-top:23pt;}
+div.go-previous{margin-top:16pt;}
+
+div.title{text-align: center;} p.title{font-size:25pt;}
+details summary::-webkit-details-marker {display:none;}
+div.participants-info{margin-left: 2vw;}
+div.participants-info > details > p {margin-left: 10vw; font-size: 8pt;}
+div.leave-comments{margin-left: 3vw;}
+div.recommend-next{text-align: right; margin-right: 5vw;}
+div.go-previous{text-align: right; margin-right: 7vw;}
+
+
+
+
+
+div.article-area{
+  position: absolute; top:0%;
+  width: 100vw; height: 76vh;
+  background: linear-gradient(to bottom, white, #e4f9fc);
+  border-radius: 0 0 100% 100% / 0 0 40% 40%;
+  overflow:auto;
+}
+div.article-area > p {
+  width: 90vw; margin-left: 4vw; margin-right: 4vw;
+  margin-bottom: 20vh;
+}
+
+
+
+
+
+
+
+/*bottom space*/
+div.margin-bottom{height: 20vh;}

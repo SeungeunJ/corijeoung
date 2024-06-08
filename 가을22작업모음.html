@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"  content="width=device-width, initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/알고보면1.css">
+  <script src="p5.js"></script>
+
+  <style>
+    body{background-color: #ffffff; transition: background-color 1s ease;}
+
+    .color-p01{background-color: #f0efee;}
+    .color-p02{background-color: #a9adbb;}
+    .color-p03{background-color: black;}
+    .color-p04{background-color: #f1ece5;}
+    .color-p05{background-color: #cbd5ff;}
+    .color-signpost{background-color: #ffffff;}
+    .color-original{background-color: #ecf5ff;}
+  </style>
+
+</head>
+
+
+<body>
+
+
+
+  <div class="colorSection" id="p01" data-color="p01">
+    <a name="websitespecificdisplay"></a>
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 86vw; margin-left: 6vw; text-indent: 25px; ">
+      <p class="text-deco" style="display:inline;word-break: keep-all; font-size: 16pt; line-height: 22pt; ">작업을 할 때 내 의미를 어떤 요소들을 통해 구체화할지, 그 요소들은 관객과 어떻게 소통하게 될지를 생각한다. 그러다 보면 도형 하나하나가 사람들의 인지에 남기는 것을 고려하게 된다. 이 과정은 작업을 할 때마다 수 번씩 반복되지만, 이 과정을 가장 확실히 거친 건 2021년 가을 타이포그래피 수업을 들을 때가 아니었을까 싶다. 글자가 선만으로 이뤄진 게 아니라 면적, 두께, 길이, 빈 공간, 획끝의 모양 등을 가진 조형 요소들의 조합이라는 것. 그리고 아주 미세한 곡률의 차이이더라도 글자의 전체적인 인상을 다르게 할 수 있다는 걸 확실히 보고 느끼게 되었다. 어떤 느낌을 이루게 할지를 생각하면서 곡률과 두께를 (비롯한 다른 요소들을) 세세하게 조절하는 일로 하나의 계절을 보냈다.</br>
+      작업을 하면서 아주 작은 조형 요소들이 사람들의 인지/마음에 분명한 영향을 주며 작용한다는 것을 여실히 느끼고 있었기 때문에. 이번 학기 사회학과 전공수업에서 다른 존재에게 영향을 미치고 '작용할 수 있는가' 를 존재의 판별 기준으로 보는 관점에 마음을 빼앗겼다. '비인간'이라는 새로운 개념, 비인간도 행동한다, 그들도 존재로 인정하자 라는 말이 그간 작업과 함께 내 안에서 부글부글대던 이런저런 생각들을 인정해주는 듯했다. 2022년 가을학기 미대 과제물로 3개의 작업을 했다. 3개의 작업들은, 의도하지는 않았으나, 모두 작업이라는 세계를 구성하는 비인간 존재들에 주목한다. 안그래도 코드, 아두이노를 다루는 수업을 듣고 있던 터라, 그들의 논리와 행위능력을 체감한 바를 탐구해 얘기하기를 시도했다. 학기 중 촉박하게 진행한 작업인지라 완성도가 높은 건 아니지만 나에게 의미 있는 결과물인 만큼 누군가에게 어떤 방식으로든 닿을 수 있기를 바라며, 조심스레 꺼내어본다.
+      </p>
+    </div><!--font-size: 12pt; line-height: 18pt;-->
+
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+
+
+  <div class="colorSection" id="p03" data-color="p03">
+    <article class="blank" style="height: 30vh;"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;">
+      <p class="text-bold" style="color: white; word-break: keep-all; font-size: 14pt; line-height: 21pt;">보이지 않는 것을 보이게 하기</p>
+      <p class="text-bold" style="color: white; word-break: keep-all; font-size: 11pt; line-height: 16pt;">정승은, 2022. 아두이노, 프로세싱, 웹캠, 공기압센서, 페트리접시, 단채널 모니터, 가변설치.</p>
+    </div>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <img src="img/practice/fall22_전전매_설치_전경.jpg" style="width: 70vw; margin-left: 8vw;">
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-regular" style="color: white; display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt;">
+        이 작업은 아두이노를 이용하여서 관객이 참여할 수 있는 작품을 구현해보는 과제로 수행되었다. 
+         관객의 행동을 인풋으로, 그에 반응하여 작품에 변화가 나타나는 것이 아웃풋이 되어야 한다. '인터랙티브 interactive' 는 작업이 작가의 사고와 과정만 거쳐 완성되는 것이 아니라, 관객의 참여에 의해 비로소 완성되는 성격을 말하며 현대미술의 중요한 축이 되었다. 여기서 중요한 것은 관객의 인풋 - 작업의 아웃풋 이다. 그 매개 역할을 하는 비인간들은 생략된다.</br>
+         이 작업은 인풋과 아웃풋 사이에서 생략되는 중간자가 아니라, '매개하는 행위자' 로서 센서-아두이노에 주목한다. 이를테면 사람의 눈에 공기는 보이지 않는다. 그러나 공기압센서와 아두이노 장치는 공기를 감지해 컴퓨터에 '수치'로 보여준다. 사람은 볼 수 없던 공기를 센서-아두이노를 통해 인지할 수 있게 되는 것이다.</br>
+      </p>
+    </div>
+
+    <article class="blank" style="height: 12px"></article>
+    <img src="img/practice/fall22_전전매_설치_집중.jpg" style="width: 70vw; margin-left: 8vw;">
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-regular" style="color: white; display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt;">
+         이 작업에서 센서-아두이노는 페트리접시 위에 있다. 붉은 빛을 내며. 공기를 읽고 있다. 이들이 읽은 공기는 모니터에 시각화되어 나타난다. 공기의 양과 속도에 따라 크기와 투명도가 다른 원들이 나타난다. 센서-아두이노를 통해 인지할 수 있게 된 가시권·가청권 너머의 존재들과 함께, 확장된 세계가 거울처럼 모니터에 비친다.</br>
+         작가가 선택하거나 만들어낸, 또는 우연한 기회에 작업의 일환으로 포섭된 ‘비인간’ 존재들도 자기의 역할을 해내며 작업에 참여하고 있다. 이 작업에서는 자신의 역할을 다하고 있고 눈
+         에도 보이지만 생략되는 존재들의 역할에 주목해 인식 범위의 확장을 시도한다.
+      </p>
+    </div>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMHx6HXHiAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative; width: 80vw; margin-left: 8vw;"></iframe>
+    <!--<iframe src="https://youtu.be/ZMHx6HXHiAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative; width: 100vw; margin-left: 0vw; display: inline; z-index: 3;"></iframe>-->
+    <!--<video muted controls src="img/practice/fall22_전전매_작품시연영상.MOV" style="width: 80vw; margin-left: 8vw;"></video>-->
+    
+    
+
+
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+    
+
+
+
+  <div class="colorSection" id="p02" data-color="p02">
+    <article class="blank" style="height: 30vh;"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;">
+      <p class="text-bold" style="word-break: keep-all; font-size: 14pt; line-height: 21pt;">인간-코드 조건: 시간</p>
+      <p class="text-bold" style="word-break: keep-all; font-size: 11pt; line-height: 16pt;">정승은, 2022. 프로세싱, 2채널 모니터, 가변크기.</p>
+    </div>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <img src="img/practice/fall22_디지털조각_설치.jpg" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;">
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt;">
+        작가는 코드를 객체(오브젝트)를 존재하게 하는 힘을 가진 행위자이자, 대화를 나누며 업무를 분담하는 공동 작업자로 본다. 에러 코드를 마주하는 일은 공동 작업자 간의 의견 충돌로 서로가 가진 인식 차이를 마주하게 한다. 작가는 여러 에러 코드를 마주하며 존재의 논리를 보다 명징하게 인지하는 경험을 했다. 이 작업에서는 시간의 흐름 속에서 오브젝트를 존재하게 하는 코드의 논리에 집중해, 인간의 존재 논리와의 교차점을 탐구한다. 제너레이티브 이미지와 텍스트 작업은 서로 마주보는 2채널에 설치되어 명상적 분위기를 연출한다.
+      </p>
+      <p class="text-deco" style="display:inline;word-break: keep-all; font-size: 14pt; line-height: 18pt; letter-spacing: -0.7pt;">실제로는 모니터 두 개가 마주보게 할 수 없어서 사진에서 보이는 것처럼 했어요.. 큰 모니터에 설치해보고 싶다~~ (언젠가 할 것!)</p>
+    </div>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BSAOsmA6gYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative; width: 80vw; margin-left: 8vw;"></iframe>
+    <!--<iframe src="https://youtube.com/shorts/DOhWG57Qiws?feature=share" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: relative; width: 100vw; margin-left: 0vw; display: inline; z-index: 3;"></iframe>-->
+    <!--<video muted autoplay loop controls src="img/practice/fall22_디지털조각_제너레이티브이미지.mov" style="width: 80vw; margin-left: 8vw;"></video>-->
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw; margin-top: -8px;">
+      <p class="text-regular" style="word-break:keep-all; font-size: 9pt; line-height: 13pt;">1채널 제너레이티브 이미지</p>
+    </div>
+    <article class="blank" style="height: 1px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw; ">
+      <a href="https://openprocessing.org/sketch/1828053" target="_blank"><p class="text-regular" style="word-break:keep-all; font-size: 9pt; line-height: 13pt; color: blue;">클릭하면 코드를 볼 수 있는 곳으로 이동합니다. (오픈 프로세싱)</p></a>
+    </div>
+
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+
+    <div class="textbox" style="width: 66vw; margin-left: 16vw; margin-right: 10vw;  border: 1px solid #9a9ad3; background-color: rgba(255, 241, 224, 0.5); height: 50vh; overflow-y: scroll; transform:rotate(-5deg);">
+      <!--<p class="text-deco" style="word-break:keep-all; font-size: 16pt; line-height: 24pt; margin-left: 2vw;">-->
+      <p class="text-regular" style="word-break:keep-all; font-size: 10pt; line-height: 15pt; margin-left: 2vw;">
+          코드를 짜며 겪는 시행착오들엔</br>존재 방식을 선연하게 드러내는 지점이 있다.</br>가령 if문 안에서 만들어진 것은 if문 안에서만 존재할 수 있다.</br>if문 밖에서는 없는 것 취급된다.</br>특정 행위를 만약..에 넣어둔다고 그 일은 없다.</br>‘once(일단 한 번 ~하면)’이나 ‘일어났다 치고’ 같은 건 통하지 않는다.</br>무언가를 존재하게 하고자 온갖 방법을 동원해봐도 에러 코드만 계속 마주하게 될 때</br>'그렇게는 될 수 없구나' 실감하게 된다.</br></br></br>코드는 도형을 그린다.</br>코드는 도형의 크기와 색깔, 위치와 움직임을 지정한다.</br>코드는 도형의 존재 조건을 말한다.</br>코드는 60분의1초마다 반복된다.",
+          "가만히 있는 것처럼 보이는 도형도</br>실은 60분의1초마다 새로 그려지는 것이다.</br>화면 속의 도형은 60분의1초 전의 도형과는 다른 것이다.</br></br></br>60분의1초는 코드에서의 찰나다.</br>원래 찰나는 손에 쥘 수 없다.</br>찰나 라고 말할 때는 찰나를 생각하고 시간이 흐른 뒤다.</br>찰나를 생각할 때에도 번뜩임으로부터 지연된 시간이 있다.</br>찰나는 너무나도 얇고,</br>얇고,</br>얇고, 얇고, 얇아서</br>어쩌면 존재하지 않을지도 모른다.</br>우리는 찰나를 알 수 없다.</br>찰나가 코드에서 60분의1초로 정의되는 것은</br>인간의 눈이 60분의1초를 포착해낼 수 없기 때문이다.</br>인간의 눈이 변화를 인지할 수 없을 만큼 짧은 시간이 60분의1초이고,</br>화면 속의 도형은 가시권의 빈틈을 이용해 존재한다.</br></br></br>보이지 않을 만큼 빨리 스쳐가는 프레임에</br>도형은 픽셀을 점유하고 존재한다.</br>존재하지 않을지도 모르는 찰나에</br>우리는 발을 딛고 살아간다.</br>-발을 딛는다고 할 수 있나? 찰나는 너무나도 작아서 우리가 그 위에 발을 올린다면 그 뾰족함에 찔려서 아주 따가울 것이다.</br></br></br>프레임이 넘어간다.</br>그림 위에 그림이 덮인다.</br>도형의 값이 갱신된다.</br>직전 프레임의 위치값에서 이동을 시작한다.</br>갱신된 위치값은 다음 이동 시 출발점이 된다.</br>찰나는 새로운 찰나의 계기가 된다.</br>그 찰나가 출발한 지점이 된다.</br></br></br>아주 찰나의 존재도</br>이후의 찰나들에 영향을 준다.</br>찰나는 아주 얇고</br>뾰족하지만</br>시간의 흐름 속에서 힘을 가진다.</br>잔상으로, 반향으로,</br>찰나 속의 존재는 다른 존재들을 향해 범람한다.</br>계속되는 범람은</br>우리의 의지와는 상관 없이 이루어진다.</br>어딘가를 향해 끝없이 뻗어나가는 무한한 에너지.</br></br></br>어딘가를 향해 끝없이 뻗어나가는 무한한 에너지.</br>아주 짧은 순간이 누군가를 완전히 다른 사람으로 바꾸어놓기도 한다.</br>우리는 종종 그런 순간을 경험하고 목도한다.</br>어디론가 흘러가는 시간에 올라탄 채,</br>유독 거대한 힘을 가지는 찰나의 반향에 휘말려 있음을 느끼며,</br>내내 알지 못하는 힘을 발휘하면서</br>프레임이 넘어간다.
+      </p>
+    </div>
+    <div class="textbox" style="width: 66vw; margin-left: 16vw; margin-right: 10vw;  transform:rotate(-5deg)">
+      <p class="text-regular" style="word-break:keep-all; font-size: 9pt; line-height: 13pt; margin-left: 2vw;">2채널 텍스트</p>
+    </div>    
+
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+
+
+
+    <div class="colorSection" id="p04" data-color="p04">
+    <article class="blank" style="height: 30vh;"></article>
+    <img src="img/practice/fall22_미디어기획_책자_선땀.png" style="width: 86vw; margin-left: 4vw; margin-right: 8vw; transform:rotate(-25deg);">
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;">
+      <p class="text-bold" style="word-break: keep-all; font-size: 14pt; line-height: 21pt;">Street Animations (기획안과 부록 책자)</p>
+      <p class="text-bold" style="word-break: keep-all; font-size: 11pt; line-height: 16pt;">정승은, 2022.</p>
+    </div>
+    <img src="img/practice/fall22_미디어기획_판넬.png" style="width: 39vw; margin-left: 8vw;">
+    <img src="img/practice/fall22_미디어기획_판넬_설치.jpg" style="width: 39vw; margin-left: 2vw;">
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt;">
+        이 작업은 학내 공간에서의 장소특정적 작업을 기획하라는 과제를 수행한 것이다. "공간의 특이성이 충분히 활용되면 공간은 작업과 분리된 것이 아니라 완전한 일체로 느껴진다. 공간과 작업의 일체는 작업을 경험하는 관객이 작업에 몰입할 수 있게 한다." 장소에서의 일상적 움직임, 장소와 연결된 사용자의 정서 등에 주목했다. 관객의 작업-향유-경험에 작가가 컨트롤할 수 없는 일상적이고 우연적이며 가변적인 요소들을 포섭하여 관객의 경험이 작가의 의도와 달리 얼마나 다양할 수 있는지를 보이는 기획을 시도했다.
+      </p>
+    </div>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <img src="img/practice/fall22_미디어기획_책자_내부01.png" style="width: 39vw; margin-left: 8vw;">
+    <img src="img/practice/fall22_미디어기획_책자_내부02.png" style="width: 39vw; margin-left: 1vw;">
+    <img src="img/practice/fall22_미디어기획_책자_내부03.png" style="width: 39vw; margin-left: 8vw;">
+    <img src="img/practice/fall22_미디어기획_책자_내부04.png" style="width: 39vw; margin-left: 1vw;">
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt;">
+        "즉 이 작업은 전시장에서 명확한 범위와 경계를 가지고 전시된 작업이 아니다. 이 작업은 관객이 일상의 공간에서 ➂처럼 낯선 무언가(‘뭐지? 작업인가?’ 하게 되는 것)를 발견하면 다른 일상의 움직임들을 의식할 수 있게 되는 형태의 작업이다. 일상적이고 가변적인 요소들에 의존해 작업의 경계를 모호하게 하고, 관객이 어디까지가 작업인지, 이것도 작업의 일환인지 의심하고 자유롭게 상상력을 발휘하는 과정이 포인트이다. 작가가 의도하는 주제를 앞장서서 제시하기보다는, 관객이 작업과 만나고 자신만의 의미를 구성해나가는 과정에서의 생동들을 존중하고자 하는 의도이다."
+      </p>
+    </div>
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+
+  <div class="colorSection" id="p05" data-color="p05">
+    <div class="textbox" style="width: 80vw; margin-left: 8vw; margin-right: 10vw;  text-indent: 25px; ">
+      <p class="text-deco" style="display:inline;word-break: keep-all; font-size: 16pt; line-height: 22pt; ">
+        이번 학기에는 작업을 하는 과정에서 마주했던 '아두이노', '프로세싱', '공간'이 어떠한 논리와 행위능력을 가지고 작업을 구성해가고 있는지, 작가/관객과 어떻게 감응하는가를 다뤄보았다 (조금). 사회학과 이론 수업에서는 라투르의 ANT를 접했고 수업에서 잠시 언급되었던 화이트헤드, 하먼의 존재론에 관심이 생겨 수업 외적으로 틈틈이 읽어보기도 했다. </br>
+        조형요소를 다루는 이들은 조형요소가 발휘하는 에너지에 민감해진다. 그 민감함은 자연스럽게 발달되는 것이기도 하고, 조형요소를 잘 다루려면 발달시켜야 하는 것이기도 하다. 여러 매체를 경유하며 작업을 시도하는 이들은 매체마다의 느낌과 그것이 이끌어내는 사람들의 행동과 인지에 민감해진다. 종이 위에 프린트된 조형요소들이나 늘상 어떤 내용을 담아내는 매체들은 흔히들 그저 대상으로만 인식되거나 심지어는 별개의 사물로도 인지되지 못하는 경우가 많은데. 이들을 다루고 탐구하는 미적 실천가들은 이들의 힘을 자연스레 터득하고 믿게 된다. 사람들의 인지를 바꿔놓고 그들의 마음을 흔들 수 있는 힘.</br>
+        이번 학기 전부터 작업과 관객 사이의 감응 메커니즘에 대해 텍스트 작업을 하고 있었다. 이번 학기의 복합적인 경험 뭉치들을 통해 또 한 발자국 나아간 것 같다. 진행 중이던 텍스트 작업에 더 살을 붙이는 중이다. 이 페이지에서 본 깨작깨작 댄 시도들이 흥미로웠다면 <strong>작가가 만들고, 관객이 보는’, 작업에 관한 기본적이고 단순한 이해 이면에서 벌어지는 복잡미묘한 생동들에 대한 관심</strong>을 주제로 하는 텍스트 작업도 기대해주시라!!!</p>
+    </div>
+
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+
+  
+    
+    
+    <article class="blank" style="height: 30vh;"></article>
+  </div>
+
+
+
+
+
+
+
+  <!--<div class="colorSection" id="signpost" data-color="signpost">
+    <article class="blank" style="height: 30vh"></article>
+    <div class="info-box" style="width: 85vw; height: 50vh; margin-left: 8vw; overflow:hidden; border-style: solid; border-color: #707070; border-width:1px;">
+      <span class="info-left" style="display: inline-block; margin-left: 3%; width: 25%; vertical-align: top; border-style: none; ">
+        <p class="text-bold" style="vertical-align: top;font-size:11pt; line-height:16pt;">마음의 터(2022).</p>
+        <p class="text-regular" style="font-size:11pt; line-height:16pt;vertical-align: top;">분류: text. lettering image.</p>
+      </span>
+      <span class="info-right" style="display: inline-block; margin-left: 4%; width: 60%; vertical-align: top; border-style: none;">
+        <p class="text-bold" style="vertical-align: top;font-size:11pt; line-height:16pt;">정승은</br></br></p>
+        <p class="text-regular" style="font-size:11pt; line-height:16pt;vertical-align: top;">
+          text, graphic.
+        </p>
+      </span>
+    </div>
+    
+    
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <article class="blank" style="height: 12px"></article>
+    <div class="signpost-signpost" style="text-align: center;">
+      <!--<strong><i class="text-bold" style="font-size: 18pt; color: black;">where do you want to go next?</i></strong>
+      <article class="blank" style="height: 12px"></article>-->
+      <!--<div class="signpost-inside-wrapper" style="position: relative; text-align: center;">
+        <div class="v-line" style="border-left : 30px solid #707070; position: absolute; top: 55px; height : 430px; margin-left: 165px;"></div>
+        <hr style="position: absolute; top: 475px; margin-left: 120px; width: 100px; border: dotted 7px rgb(3, 206, 101);"
+        <a href="#websitespecificdisplay"><p class="text-regular" style="font-size: 10pt; line-height: 12pt; position: absolute; background-color: white; border: 4px solid blue; margin-left: 120px; top: 0px; padding: 24px; border-radius: 100% 80% 50% 30% / 90% 100% 40% 50%;">web</br>site-specific</br>display</p></a>
+        
+        <a href="http://jeoungseungeun.com/%EC%9A%B0%EB%A6%AC%EB%91%98%EC%9D%80%EC%96%BC%EC%96%B4%EB%B6%99%EC%A7%80%EC%95%8A%EC%9D%84%EA%B1%B0%EC%95%BC.html"><p class="text-regular" style="font-size: 10pt; line-height: 12pt; vertical-align: middle; position: absolute; background-color: white; border: 4px solid blue; color: blue; margin-left: 50px; top: 105px; padding: 10px; border-radius: 50%;">깊고 따스한</br>마음의 터</br>-콘텐츠 큐레이션</p></a>
+
+        <a href="http://jeoungseungeun.com/%EC%9D%B4%EB%B0%A9%EC%9D%B8.html"><p class="text-regular" style="font-size: 10pt; line-height: 12pt; vertical-align: middle; position: absolute; background-color: white; border: 4px solid blue; color: blue; margin-left: 30px; top: 205px; padding: 18px; border-radius: 50%;">터를 잃은 자리가</br>새로운 터가 되는</br>-사진</p></a>
+
+        <p class="text-regular" style="font-size: 10pt; line-height: 12pt; vertical-align: middle; position: absolute; background-color: white; border: 4px solid blue; color: blue; margin-left: 175px; top: 235px; padding: 15px; border-radius: 50%;">터를 잃은 자리가</br>새로운 터가 되는</br>-무빙 텍스트</p>
+
+        <a href="#작가노트"><p class="text-regular" style="font-size: 10pt; line-height: 12pt; position: absolute; background-color: white; border: 4px solid blue; margin-left: 120px; top: 360px; padding: 24px; border-radius: 50% 20% 80% 70% / 30% 40% 100% 100%;">작가노트</p></a>
+      </div>
+      
+      <article class="blank" style="height: 30vh;"></article>
+      
+    </div>
+
+
+    <article class="blank" style="height: 100vh"></article>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
+  <!--<div class="colorSection" id="original" data-color="original">
+    <a name="작가노트"></a>
+    <article class="blank" style="height: 12px"></article>
+  </div>-->
+        
+        
+        
+        
+        
+
+
+
+  <div class="fixed-bottom" style="position: fixed; height: 7vh; top: 93vh; margin-left: -5vw; width: 110vw; background:linear-gradient(rgb(180 217 255 / 0), rgb(180 217 255));">
+    <img src="img/identity/logo2021.png" style="height: 4vh; margin-left: 5vw; display:inline; z-index: 3;">
+
+    <!--<input type="checkbox" id="indexbox">
+    <label for="indexbox" class="open-indexbox">
+      <img src="img/identity/indexbar.png" style="height: 4vh; display:inline;z-index: 3;">
+    </label>-->
+
+  </div>
+
+
+
+    <!--스크롤 시 배경색 변경-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script type="text/javascript">
+      $(window).scroll(function(){
+  
+        var $window = $(window),
+              $body = $('body'),
+              $colorSection = $('.colorSection');
+        
+        var scroll = $window.scrollTop() + ($window.height() / 3);
+  
+        $colorSection.each(function() {
+          var $this = $(this);
+          if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            $body.removeClass(function (index,css) {
+              return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+            });
+            $body.addClass('color-' + $(this).data('color'));
+          }
+        });
+      }).scroll();
+    </script>
+    </script>
+
+
+</body>
+</html>

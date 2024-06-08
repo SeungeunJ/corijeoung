@@ -1,0 +1,53 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{font-family: 'YESGothic-Regular';}
+
+/*body{ /*background color*/
+  /*background-color: #fffff0; background-position-y: 20%; background-size: 100%;
+  background: linear-gradient(to right, white, #5e91c0); background-position-y: 80%; background-size: 100%;
+}*/
+
+
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+  width: 20vw; top: -15pt; left: 80vw;}
+
+
+/*font*/
+a{text-decoration: none; color: black;}
+p.explana{text-align: center;}
+
+/*stroll되도록 position absolute해주기*/
+section.content-마음의터텍스트,
+section.content-우리둘은얼어붙지않을거야,
+img.deco-illu-터를잃은, /*img.deco-pic-캐리어01,*/ img.deco-illu-clicktosee,
+section.content-이방인, section.content-이방인2, section.content-서울살이
+{position: absolute;}
+
+
+/*가로 너비+여백*/ img.full{width: 100%;} img.section-small-right{left: 55%; width: 40%;}
+img.deco-illu-터를잃은{left:10vw; width: 18vw;}
+img.deco-pic-캐리어01{left: 9vw; /*width: 35vw;*/}
+img.deco-illu-clicktosee{left:10vw; width: 18vw;}
+
+section.content-마음의터텍스트, section.content-우리둘은얼어붙지않을거야,
+section.content-이방인, section.content-이방인2, section.content-서울살이
+{left: 15vw; width: 70vw;}
+
+
+/*세로위치*/
+body{height: 800vh;}
+div.colorSection{min-height: 280vh;}
+section.content-마음의터텍스트{top: 130vh;}
+section.content-우리둘은얼어붙지않을거야{top: 200vh;}
+img.deco-illu-터를잃은{top: 300vh;}
+div.이방인{display: flex; top: 300vh;}img.deco-pic-캐리어01{position: sticky; top: 65vh; height: 40vh;}
+section.content-이방인{top:405vh;}
+img.deco-illu-clicktosee{top: 425vh;}
+section.content-이방인2{top:460vh;}
+section.content-서울살이{top: 520vh;}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GothicA1-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+summary.title{ font-family: 'GothicA1-Regular'; font-size:14pt; line-height: 21pt; color: #707070;}
+summary.murmuring{font-family: 'GothicA1-Regular'; font-size:14pt; line-height: 21pt;}
+p.text-bold{ font-family: 'GothicA1-Bold'; font-size:14pt; line-height: 21pt; color: #707070;}
+p.text-regular{font-family: 'GothicA1-Regular'; font-size:14pt; line-height: 21pt;  color: #707070;}
+/*a{text-decoration: none; color: black;}*/
+
+div.colorSection{margin-left: 5vw; margin-right: 7vw;}
+
+/*details.murmuring{margin-left: 24vw; margin-right:7vw;}*/
+/*erase arrow next to your summary title*/
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}

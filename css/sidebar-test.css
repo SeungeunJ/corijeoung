@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+#indexbox{display: none;}
+/*체크 안 됐을 때*/
+div.indexbar{ width:100vw; height: 100vh; background: #d7dfff;
+  position: fixed; top:0; right:-100vw; z-index: 2; transition:all .35s; opacity: 0.9;
+}
+    /*div 내 닫기 버튼*/
+    label.close-indexbox{width: 10vw; cursor:point;
+      display:block; position: absolute; right:-105vw; top: 5vh; }
+    img.closemenu{width: 100%; z-index: 100;}
+
+input[id="indexbox"]+label{ width:10vw; cursor:point;
+  display:block; position:fixed;  left:85vw; top: 5vh; transition:all .35s;
+}
+/*체크됐을 때*/
+input[id="indexbox"]:checked ~ div{
+  right:0vw;
+}
+input[id="indexbox"]:checked ~ div > label{
+  left: 85vw;
+}
+input[id="indexbox"]:checked + label{
+  left: -185vw;
+}
+
+
+
+

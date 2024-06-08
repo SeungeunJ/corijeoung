@@ -1,0 +1,27 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{font-family: 'YESGothic-Regular';}
+
+
+div.content-box{width: 90vw; margin-left:4vw; margin-right:4vw;
+  margin-bottom: 60pt; 
+  border-radius: 20pt;}
+p.text{padding-left: 3vw; padding-right:3vw; padding-top:10pt;}
+p.credit{padding-left: 3vw; padding-bottom:5pt;}
+
+
+/*font-size, line-height*/
+p.text{font-size:12pt; line-height:18pt;}
+p.text-middle-oblique{font-size:14pt; text-align: center; font-style:oblique;}
+p.credit{font-size:8pt; margin-top:10pt; color: #b5b5b5;}
+
+img{margin-bottom:8%;}
+img.image-full{width:100%;}
+img.image-1-1-4{margin-left:25%; width: 70%; margin-bottom:15%;}
+img.image-left-half{padding-left:3vw; width: 50%;}
+img.image-right-half{margin-left: 40%; width: 50%; margin-bottom:30%;}

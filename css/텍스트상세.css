@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*fonts*/
+@font-face {
+  font-family: 'GothicA1-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UhBeepuding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+summary.title{font-family: 'UhBeepuding'; font-size:28pt; line-height:40pt; margin-bottom: 18pt;/*font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;*/}
+/*p.title-number{font-family: 'GothicA1-ExtraBold'; font-size:20pt; line-height:35pt;}
+p.title-regular{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}*/
+p.text-regular{font-family: 'YESGothic-Regular'; font-size:12pt; line-height:15pt;}
+
+img.image-regular{width: 80vw;}
+
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+  width: 20vw; top: -15pt; left: 80vw;}
+
+
+/*erase arrow next to your summary title*/
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}
+/*하이퍼링크 티내지좀마!*/
+a.footnote{text-decoration: none; color:black;}
+a.link{text-decoration: underline; color:black;}
+
+
+/*set proper 여백, 간격*/
+details{margin-top: 35pt; margin-left: 3vw;
+  width: 86vw;}
+
+/*가로선*/
+hr.horizontal-line{position: fixed; top:30vh;}
+
+/*footnote*/
+sub.footnote{color:grey; font-size: 5pt; margin-right: 20pt;} a.footnote{color:grey; text-decoration: none;}
+/*hr.footnote-line{}*/
+p.footnote{color: grey; font-size:9pt; line-height:11pt;}

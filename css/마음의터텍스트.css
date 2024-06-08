@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*fonts*/
+@font-face {
+  font-family: 'GothicA1-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+summary.title{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}
+/*p.title-number{font-family: 'GothicA1-ExtraBold'; font-size:20pt; line-height:35pt;}
+p.title-regular{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}*/
+p.text-regular{font-family: 'YESGothic-Regular'; font-size:12pt; line-height:17pt;}
+
+
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+width: 20vw; top: -15pt; left: 80vw;}
+
+
+/*본문*/
+section.text-regular{margin-left: 4vw; width: 87vw; margin-top: 45pt;  margin-bottom: 40pt;}
+
+
+/*footnote*/
+section.footnote{margin-left: 4vw; width: 87vw; margin-bottom: 40pt;}
+sub.footnote{color:grey; font-size: 5pt; margin-right: 20pt;} a.footnote{color:grey; text-decoration: none;}
+/*hr.footnote-line{}*/
+p.footnote{color: grey; font-size:9pt; line-height:11pt;}
+
+
+/*added information**/
+section.added-information{margin-top: 45pt; margin-left: 4vw; width: 87vw;}
+p.added-information-list{font-size: 18pt; line-height: 25pt;}
+p.added-information-title{font-size: 15pt;}
+a.added-information-list{text-decoration: none; color:black;}
+
+
+
+
+
+/*밑여백*/
+section.margin-bottom{margin-bottom: 30pt;}

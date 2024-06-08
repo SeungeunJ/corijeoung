@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+  /*unicode-range: U+AC00-D7A3, U+0030-0039; /*한글, 숫자*/
+}
+
+@font-face {
+  font-family: 'GothicA1-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
+  /*unicode-range: U+AC00-D7A3, U+0030-0039; /*한글, 숫자*/
+}
+
+@font-face {
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+  unicode-range: U+0041-005A, U+0061-007A; /*영문*/
+}
+
+@font-face {
+  font-family: 'Lumanosimo', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+  unicode-range: U+0041-005A, U+0061-007A; /*영문*/
+}
+
+@font-face {
+  font-family: 'Caveat';
+  font-weight: 400;
+  font-style: regular;
+  src: url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  unicode-range: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E, U+0028, U+0029; /*특수기호*/
+}
+
+
+
+p{word-break: keep-all;}
+body{ font-family: 'Cormorant Infant', 'GothicA1-Regular','GothicA1-SemiBold'; font-size: 14pt;}
+
+
+
+
+
+
+
+@media (min-width: 450px) {
+  .mobile{display: none;}
+}
+
+@media (max-width: 450px) {
+  .desktop{display: none;}
+}

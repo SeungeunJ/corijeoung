@@ -1,0 +1,26 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{font-family: 'YESGothic-Regular';}
+
+p.intro-text{font-size:18pt; line-height:45pt;}
+
+div.intro-top{position: absolute;
+top: 300px; left: 60px;
+margin-left: 60px;}
+
+div.intro-bottom{position: absolute;
+  top: 550px; left: 60px;
+  margin-left: 20px;}
+
+
+/*링크 밑줄 안 그이게 하기*/
+a.none {text-decoration:none; text-decoration-line:none; text-decoration-color:black; text-decoration-style:none;}
+a:link { color:#5570fa; }
+a:visited { color:#5570fa; }
+a:hover { color:#5570fa; }
+a:active { color:#5570fa; }

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GothicA1-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
+}
+
+p{ font-family: 'GothicA1-Regular','GothicA1-SemiBold'; font-size: 14pt;}
+
+
+
+
+
+
+
+@media (min-width: 450px) {
+  .mobile{display: none;}
+}
+
+@media (max-width: 450px) {
+  .desktop{display: none;}
+}

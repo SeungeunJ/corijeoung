@@ -1,0 +1,29 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{font-family: 'YESGothic-Regular';}
+
+
+/*html 버튼 배치*/
+section.button-마음의터{
+  position: absolute;
+  top:0%;
+  width: 100vw;
+  height: 250px;
+}
+section.button-artascreatingnetwork{
+  position: absolute;
+  top:250px;
+  width: 100vw;
+  height: 150px;
+}
+section.button-about{
+  position: absolute;
+  top:400px;
+  width: 100vw;
+  height: 250px;
+}

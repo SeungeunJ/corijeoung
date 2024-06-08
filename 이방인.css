@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*fonts*/
+@font-face {
+  font-family: 'GothicA1-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+summary.title{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}
+p.text-regular{font-family: 'YESGothic-Regular'; font-size:12pt; line-height:17pt;}
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+width: 20vw; top: -15pt; left: 80vw;}
+
+/*스크롤바 없애기*/ /*작동안함*/
+/*body::-webkit-scrollbar {display:none;}
+body::-webkit-scrollbar-thumb {display:none;}
+body::-webkit-scrollbar-track {display:none;}*/
+
+
+/*stroll되도록 position absolute해주기*/
+img.image-reg, div.div-absolute{position: absolute;}
+
+
+/*본문*/
+body{height: 1100vh;}
+img[id="image-확대안내"]{margin-left: 48vw; width: 4vw; top:2vh;}
+img[id="image-이방인2"]{margin-left: 4vw; width: 87vw; top:50vh;}
+img[id="image-이방인3"]{margin-left: 13vw; width: 75vw; top:100vh;}
+img[id="image-이방인4"]{margin-left: 20vw; width: 60vw; top:132vh;}
+img[id="image-이방인5"]{margin-left: 4vw; width: 87vw; top:190vh;}
+img[id="image-이방인7"]{margin-left: 9vw; width: 75vw; top: 280vh;}
+img[id="image-이방인8"]{margin-left: 40vw; width: 50vw; top: 353vh;}
+
+img[id="image-이방인9"]{margin-left: 4vw; width: 87vw; top:450vh;}
+img[id="image-이방인10"]{margin-left: 2vw; width: 89vw; top:540vh;}
+img[id="image-이방인11"]{margin-left: 18vw; width: 65vw; top:610vh;}
+img[id="image-이방인12"]{margin-left: 4vw; width: 87vw; top:700vh;}
+img[id="image-이방인13"]{margin-left: 4vw; width: 84vw; top: 730vh;}
+img[id="image-이방인14"]{margin-left: 20vw; width: 60vw; top: 795vh;}
+
+img[id="image-이방인글"]{margin-left: 37vw; width: 22vw; top: 875vh;}
+
+div[id="bitmore"]{top: 980vh; padding: 4vw; height: 45vh;}
+img[id="image-창작정보"]{margin-left: 4vw; width: 22.5vw; top: 2vh;}
+img[id="image-비하인드"]{margin-left: 62.5vw; width: 22.5vw; top: 2vh;}
+
+
+
+
+/*footnote*/
+/*section.footnote{margin-left: 4vw; width: 87vw; margin-bottom: 40pt;}
+sub.footnote{color:grey; font-size: 5pt; margin-right: 20pt;} a.footnote{color:grey; text-decoration: none;}*/
+/*hr.footnote-line{}*/
+/*p.footnote{color: grey; font-size:9pt; line-height:11pt;}*/
+
+
+/*creatorbox*/
+#creatorbox{display: none;}
+/*체크 안 됐을 때*/
+/*div.creatorbox{ display: none;/*width:100vw; height: 100vh; background: #d7dfff;
+  position: fixed; top:0; right:-100vw; z-index: 2; transition:all .35s; opacity: 0.9;*/
+/*}*/
+
+/*input[id="creatorbox"]+label{ width:10vw; cursor:point;
+  display:block; position:fixed;  left:85vw; top: 5vh; transition:all .35s;
+}*/
+
+/*체크됐을 때*/
+input[id="creatorbox"]:checked ~ div{
+  width: 100vw; height:100vh;
+  position: fixed; top:0; left:0; 
+  color: black; opacity: 200;
+}
+input[id="creatorbox"]:checked ~ div>div{
+  width: 50vw;
+  height: 40vh;
+  position: fixed; margin-top: 30vh; margin-left: 25vw;
+  background-color: #d7dfff;
+}
+
+
+
+/*밑여백*/
+section.margin-bottom{margin-bottom: 30pt;}

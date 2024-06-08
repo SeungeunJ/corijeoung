@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+  font-display: swap;
+  /*unicode-range: U+AC00-D7A3;*/
+}
+@font-face {
+  font-family: 'GothicA1-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
+  font-display: swap;
+  /*unicode-range: U+AC00-D7A3;*/
+}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  /*unicode-range: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E, U+0041-005A, U+0061-007A;*/
+}
+@font-face {
+  font-family: 'UhBeeTOMO';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeTOMO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+p{ font-family: 'GothicA1-Regular', 'YESGothic-Regular'; font-size:14pt; line-height: 21pt; color: rgb(137, 122, 255);;}
+/*#d6dcff #5665eb*/
+
+p.content-title{ font-size: 14pt; line-height: 14pt;}
+p.content-class{ font-size: 10pt; line-height: 14pt; }
+p.content-title, p.content-class{display:inline;word-break: keep-all;}
+
+
+div.textbox{margin-bottom: 55px; text-indent: -13px;}
+img.content-representation{width: 25vh; border-radius: 37%;}

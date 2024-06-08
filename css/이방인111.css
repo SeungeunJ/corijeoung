@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*fonts*/
+@font-face {
+  font-family: 'GothicA1-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+summary.title{font-family: 'GothicA1-ExtraBold'; font-size:25pt; line-height:35pt;}
+p.text-regular{font-family: 'YESGothic-Regular'; font-size:12pt; line-height:17pt;}
+/*기본 fixed set*/
+img.손꾸락{position: fixed;
+width: 20vw; top: -15pt; left: 80vw;}
+
+/*스크롤바 없애기*/ /*작동안함*/
+/*body::-webkit-scrollbar {display:none;}
+body::-webkit-scrollbar-thumb {display:none;}
+body::-webkit-scrollbar-track {display:none;}*/
+
+
+/*stroll되도록 position absolute해주기*/
+img.image-이방인2,img.image-이방인3,img.image-이방인4,img.image-이방인5,
+img.image-이방인7,img.image-이방인8,
+hr.body-end-line, section.added-information-list,
+section.creator-note, section.behind-note,
+section.creator-information, section.artistic-caption, section.related-works
+{position: absolute;}
+
+
+/*본문*/
+body{height: 800vh;}
+img.image-이방인2{margin-left: 4vw; width: 87vw; top:50vh;}
+img.image-이방인3{margin-left: 13vw; width: 75vw; top:100vh;}
+img.image-이방인4{margin-left: 20vw; width: 60vw; top:130vh;}
+img.image-이방인5{margin-left: 4vw; width: 87vw; top:190vh;}
+img.image-이방인7{margin-left: 9vw; width: 75vw; top: 280vh;}
+img.image-이방인8{margin-left: 40vw; width: 50vw; top: 350vh;}
+hr.body-end-line{top: 430vh;}
+section.added-information-list{margin-left: 4vw; width: 87vw; top: 450vh;}
+section.creator-note{margin-left: 4vw; width: 87vw; top: 485vh;}
+section.behind-note{margin-left: 4vw; width: 87vw; top: 510vh;}
+section.creator-information{margin-left: 4vw; width: 87vw; top: 535vh;}
+section.artistic-caption{margin-left: 4vw; width: 87vw; top: 560vh;}
+section.related-works{margin-left: 4vw; width: 87vw; top: 585vh;}
+
+
+
+
+/*footnote*/
+/*section.footnote{margin-left: 4vw; width: 87vw; margin-bottom: 40pt;}
+sub.footnote{color:grey; font-size: 5pt; margin-right: 20pt;} a.footnote{color:grey; text-decoration: none;}*/
+/*hr.footnote-line{}*/
+/*p.footnote{color: grey; font-size:9pt; line-height:11pt;}*/
+
+
+
+/*added information**/
+section.added-information{margin-top: 45pt; margin-left: 4vw; width: 87vw;}
+p.added-information-list{font-size: 18pt; line-height: 25pt;}
+p.added-information-title{font-size: 15pt;}
+a.added-information-list{text-decoration: none; color:black;}
+
+
+
+
+
+/*밑여백*/
+section.margin-bottom{margin-bottom: 30pt;}

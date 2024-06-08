@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+AC00-D7A3;
+}
+@font-face {
+  font-family: 'GothicA1-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Bold.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+AC00-D7A3;
+}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: 'UhBeeTOMO';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeTOMO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+summary.title{ font-family: 'GothicA1-Regular', 'YESGothic-Regular'; font-size:14pt; line-height: 21pt; color: #707070;}
+summary.murmuring{font-family: 'GothicA1-Regular', 'YESGothic-Regular'; font-size:14pt; line-height: 21pt;}
+p.text-bold, p.sum{ font-family: 'GothicA1-Bold', 'YESGothic-Regular'; font-size:14pt; line-height: 21pt; color: #707070;}
+p.text-regular, p.det{font-family: 'GothicA1-Regular', 'YESGothic-Regular'; font-size:14pt; line-height: 21pt;  color: #707070;}
+p.text-deco{font-family: 'UhBeeTOMO'; font-size: 16pt; line-height: 24pt; color:#707070;}
+
+
+canvas{flex:100%; position: auto;}
+    #sketch-holder{display: flex; margin-left: 0.6vw; width:95vw !important;}
+
+
+/*details.murmuring{margin-left: 24vw; margin-right:7vw;}*/
+/*erase arrow next to your summary title*/
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}
+
+
+
+#indexbox{display: none;}
+/*체크 안 됐을 때*/
+div.indexbar{ width:100vw; height: 93vh; /*background: #d7dfff;*/
+  position: fixed; top:110vh; right:-10vw; transition:all .35s; opacity: 0.9;
+}
+input[id="indexbox"]+label{ width:10vw; transition:all .35s;
+}
+/*체크됐을 때*/
+input[id="indexbox"]:checked ~ div{
+  top: 0;
+}
+/*input[id="indexbox"]:checked ~ div > label{
+  left: 85vw;
+}*/
+/*input[id="indexbox"]:checked + label{
+  left: -185vw;
+}*/

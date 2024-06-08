@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'GothicA1-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GothicA1-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/GothicA1/GothicA1-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+p{font-family: 'GothicA1-Regular'; font-size: 11pt;}

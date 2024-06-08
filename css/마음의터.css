@@ -1,0 +1,67 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'GothicA1-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+body{ font-family: 'GothicA1-Light';}
+/*font*/
+a{text-decoration: none; color: black;}
+p.explana{text-align: center;}
+
+
+/*stroll되도록 position absolute해주기*/
+/*div.colorSection,*/
+img,p,article,
+div.colorSection,
+div.상실은새로운터
+{position: absolute;}
+
+
+/*가로 너비+여백(크기)*/
+img.image-regular{width: 96vw;}
+img.image-85vw{width: 85vw; margin-left: 5vw;}
+img.image-half{width: 45vw;}
+p.text-half{width: 45vw;}
+
+
+/*세로여백모음*/
+article[id="vh40"]{height: 40vh;}
+
+/*세로위치, 배치*/
+body{height: 1000vh;}
+div.colorSection{min-height: 200vh;}
+/*div[id="마음의터"]{top: 0vh;}*/
+div[id="마음의터"]{top: 0vh; height: 220vh;}
+    div[id="square1"], div[id="square2"], div[id="ellipse1"] {position: sticky;}
+    div[id="square1"]{top: 30vh; height:30vh; background: #dbb9fc;
+      width: 35vh; margin-left: 35vh; 
+      filter: blur(40px);}
+    div[id="square2"]{top: 40vh; height:45vh; background: #dbb9fc;
+      width: 20vh; margin-left: 0vh; 
+      filter: blur(40px);}
+    div[id="ellipse1"]{top: 50vh; height:40vh; background: #dbb9fc;
+      width: 35vh; margin-left: 5vh; border-radius: 50%;
+      filter: blur(40px);}
+    p[id="마음의터설명"]{top: 35vh; z-index: 3;}
+    img[id="마음의터데코"]{top: 75vh; width: 45vw; margin-left: 20vw;}
+      /*img[id="마음의터레터링"]{top: 5vh;  }
+      img[id="마음의터1"]{top: 35vh; width: 39vw; margin-left: 50vw;}
+      p[id="마음의터half글"]{top:41vh; width: 40vw; margin-left: 7vw;
+      font-size: 10pt;}
+      img[id="마음의터2"]{top: 57vh; width: 45vw; margin-left: 47vw;}
+      img[id="마음의터3"]{top: 68vh; width: 40vw; margin-left: 7vw;}*/
+
+  img[id="마음의터forlost"]{top: 145vh; width: 90vw; margin-left: 4vw; z-index: 3;}
+  /*img[id="deco-illu-터를잃은"]{top: 260vh; left:10vw; width: 18vw;}*/
+
+div[id="터를잃은"]{top: 220vh; height: 450vh;}
+  div[id="sketch-holder"]{top: 60vh;}
+  img[id="이방인콜라주"]{top: 120vh; z-index: 3;}
+  img[id="사소서울살이"]{top: 350vh;}
+  /*canvas{flex:100%; position: auto;}*/
+  
+
+div[id="anxiety"]{top: 670vh; height: 200vh;}
+img[id="알고보면썸네일"]{top: 60vh;}

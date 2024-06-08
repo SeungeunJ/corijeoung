@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"  content="width=device-width, initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/알고보면1.css">
+  <script src="p5.js"></script>
+
+  <style>
+    body{background-color: black; transition: background-color 1s ease;}
+    .color-websitespecific{background-color: black;}
+    .color-signpost{background-color: #ffffff;}
+    .color-original{background-color: #FDF6EE;}
+  </style>
+</head>
+
+<body>
+
+
+  <div class="colorSection" id="websitespecific" data-color="websitespecific">
+
+    <article class="blank" style="height: 12px;"></article>
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(255, 255, 146)); z-index:10; padding: 10px; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: brown;">일상을 새로운 관점으로, 당연한 것을 당연하지 않게 바라본다는 점에서 예술과 사회학은 닮았다.</br></p>
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: brown;"></br>2020.11.28. 사회학과 예술의 관련성에 대해 고민하며 적어본 글 중에서.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+    
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(223, 238, 215); z-index:10; padding: 10px; border:5px rgb(221, 255, 0); border-style: dashed groove none dotted; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(42, 165, 138);">다만 최근 제가 천착한 어려움은 학문장에서 요구하고 제가 추구하는 것만큼의 '관점의 엄격함'과 '탐구에의 집중'이 예술장에서는 요구되지 않는다는 점입니다. 작가가 무엇을 포착하고 자유롭게 표현하는 예술장에서의 작업방식에서, 학문장에서 요구되는 기존 이론과의 조응, 결론을 뒷받침하는 충분한 근거, 엄격한 윤리성의 추구는 종종 창의성을 가로막고 작업의 소요시간을 늘려 힘을 빼는 것으로 여겨집니다. 또한 학문에서 어떤 관점이 기존의 여러 이론들을 차용하거나 비판하면서 힘을 얻는데, 이런 지난한 과정을 대중적이고 직관적인 예술로 풀어내는 일에는 예술적 방법론에 대한 꽤 오랜 시간의 숙련과 여러 번 깎이는 시도들이 필요할 듯합니다. 제가 그 과정을 견디면서 계속해서 그 방향을 원하게 될지는 잘 모르겠습니다.</br></p>
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(182, 198, 73);"></br>2021.05.25. 블로그에 쓴 글</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background: linear-gradient(rgb(255, 255, 255) 35%, rgb(124, 185, 255) 55%, rgb(255, 255, 255) 75%); z-index:10; padding: 10px;; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: #8937e8;">나는 사회학이 사회에 대한 설명력을 제공하고자 하는 학문이라고 본다. ‘사회에 대한 설명력’은 굉장히 다각도에서 접근할 수 있는 말인데, 이를테면 인구조사와 같이 사회적 자본의 양적인 측정과 통계에서부터 사회의 기저에서 사회를 움직이는 인간의 심리, 사람과 사람 사이의 상황에서 발생하는 아주 작은 위계와 권력 등을 포괄한다. 설명하고자 하는 대상인 ‘사회’도 세대 등에 따라 매우 다른 양상을 보여, 한국사회의 유교성에 대한 연구를 주로 수행하는 중장년층의 연구자와 sns를 중심으로 관찰되는 새로운 관계를 연구하는 신진 연구자가 서로의 사회학이 가진 설명력과 필요성에 회의를 느낄 수도 있다(이것은 어디까지나 예시이다). 바로 이러한 점들에서 사회학이 무엇인지 한 마디로 설명하기 어려운 모호함이 발생한다.</br>
+        사회학이 목표하는 ‘사회에 대한 설명력’이란 멈추지 않는 시간의 흐름 속에서, 한눈에 보이거나 손에 잡히지 않지만 존재하는 것을, 언어와 체계로 정리해, 보고 생각할 수 있게 하는 것에 있다. 그래서 사회학은 사람들이 실체를 모르고 경험한 무언가를 드러내며, 때로는 거기에 설득력 있는 근거까지 부여해 쾌감을 준다. 사람들이 자신에게 일어난 일을 성찰하고 자신을 이해하는 데에 도움을 줄 뿐 아니라 우리 공동체를 이해하고 우리 사회에서 어떤 것을 필요로 하는지 아는 데에도 도움을 준다.</br>
+        사회학의 유용함은 그것이 갖춘 설명력의 유용함과 별개로, 사회학적 시선의 유용함으로도 존재한다. 사회학을 배우다 보면 존재 구속성, 인식의 선험성에 대해 명확한 인지를 가지게 된다. 어떤 이론이 굉장한 진실/지식이라고 여겨지며 한 시대를 풍미했다가 후속 연구자에 의해 이데올로기적/편협한 면이 있음이 밝혀졌다는 것을 볼 때. 또는 어떤 사회 이론이 내가 보기에 전혀 와닿지 않고 오늘날 사회에서 더 이상 설명력을 가지지 못한다고 느낄 때. 그 이론과 지식 또한 한 시대의 구성물이며 우리 모두 시간의 흐름 속에서 특정한 지점에 매여 있을 수밖에 없다는 지각을 체화한다. 내가 믿는 것이 사실이 아닐 수 있다는 인지, 인간은 한계와 비합리성을 존재의 법칙으로 지니고 있다는 인식은 다른 학문 분야들과는 차별화된, 인간의 사고와 존재 양태에 대한 예리한 감각을 가지게 한다.</br></p>
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: black;"></br>2022.12.19. 사회학과 전공 수업인 사회학사 과제로 제출한 글 중 일부.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(215, 228, 238); z-index:10; padding: 10px;; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(0, 126, 25);">사회학적 상상력을 통해 생각할 수 있는 비현실을 예술을 통해 그려낼 수 있다.</br></p>
+      <p class="text-bold" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(0, 126, 25);"></br>2020.11.28. 사회학과 예술의 관련성에 대해 고민하며 적어본 글 중에서.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(125, 179, 136); z-index:10; padding: 10px; border:5px groove rgb(72, 63, 166); ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(72, 63, 166);">개인적으로 그리고 사회학과 미술을 공부하는 사람으로서 요즘 미술 작업들에 시각적인 사회학·인류학·고고학이라고 느껴지는 흐름이 존재한다고 생각한다. 사회학·인류학·고고학에서도 탐구할 법한 주제를 선정하고 그 학문들의 방식과 얼핏 비슷한 방법으로 탐구를 한다. 그런데 그 학계들만의 '쪼' 때문에 풀어내기는 힘든 방식이, 미술계에서는 미술계의 '쪼'로 인해 다소 열려 있다. 그래서 단정하거나 깔끔한 이미지·전개방식이 아닌 보다 실험적이고 미적인 방식으로 이야기를 풀어나갈 수 있다. 또 선행연구를 기준삼기보다 수용자의 입장에서 미적으로 느낄지가 기준이 되기 때문에 실용주의적이고 미적인 것을 추구하는 나에게는.. 이런 다큐가 탐구의 아웃풋으로서 훨씬 충족적인 형태가 되겠다. 러닝타임이 꽤 되었는데도 처음부터 끝까지 다 봄.</br></p>
+      <p class="text-bold" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(72, 63, 166);"></br>2022.04.10. 인천아트플랫폼 전시 '송출된 과거, 유산의 극장'을 관람한 후 <a href="https://m.blog.naver.com/momentsthatfleet/222696862779">블로그</a>에 쓴 감상.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+    
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(255, 217, 242); z-index:10; padding: 10px; border:5px rgb(244, 0, 0); border-style: dashed double none; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(230, 112, 112);">사회학이 사회학적 상상력을 발휘해 관념이라는 하나의 연결망(길, 통로, 다리)으로 모으는 것을 목표한다면. 예술은 예술가 저마다의 상상력이 시각, 청각, 촉각, 후각, 미각, 여러 감각들의 조합들로 다채로운 연결망을 구성해내는 것이다. 연결망은 더 많은 사람에게 손을 뻗고 새로운 인지의 세계로 인도한다.</br></p>
+      <p class="text-bold" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(230, 112, 112);"></br>2020.11.28. 사회학과 예술의 관련성에 대해 고민하며 적어본 글 중 일부를 2023년 2월의 시각으로 재가공했다.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(24, 105, 171); z-index:10; padding: 10px; border:20px dotted rgb(226, 145, 239); ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(226, 145, 239);">전공 학점 채운다고 거의 1년만에 이론 수업을 듣게 되면서•••솔직히 걱정했었다. 스무살 때까지만 해도 이론을 아주 좋아했는데 1년 전쯤부터는 이론을 좀 기피(?)해왔기 때문이다. 다음과 같은 이유들로..</br></br>
+        (1) 시각 작업을 할 때 요구되는 사고랑 이론에 필요한 사고랑 너-무 달라서. 이론을 할 때는 객관적 설명력을 중심으로 하고 선행연구에 기반을 둬야 한다면, 시각 작업을 할 때는 나 개인의 흥미와 맥락을 믿고 결단하고 추진하는 것이 중요하다. 이론에 익숙한 나는 거기서 좀 벗어나야 작업이 될 것 같았다.</br></br>
+        (2) 이론은 객관적 설명력을 지니기 위해 현상을 정의하고 개념을 만든다. 개념은 성립하기 위해 다른 것들과의 구분이 있어야 하고, 어쩔 수 없이 실제의 잘려나감을 겪는다. 나는 어떤 일을 겪거나 사고를 할 때 온 몸과 온 마음으로 하는 편인데, 이론의 잘려나간 언어들이 내 느낌을 조각조각 내고 왜곡하는 면이 있다고 느꼈다. 어떤 이론에 익숙해지면 이론이 실제의 어디서부터를 편집하고 과장했는지 모르겠을 때가 있었고.. 그래서 자꾸 더 많은 이론을 공부하고 알아야 하는 것을 조심스러워하게 되었다.</br></p>
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(226, 145, 239);"></br>2022.12.28. <a href="https://m.blog.naver.com/momentsthatfleet/222968080600">블로그</a>에 쓴 글</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(215, 228, 238); z-index:10; padding: 10px; border:5px double rgb(19, 161, 88); ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(19, 161, 88);">그 이론을 매개로 사고의 확장을 겪기도. 이때 내가 이론을 이래서 좋아했지! 삶의 감각들을 세밀히 들여다봐주고 더 나은 앎을 만들기 위해 치열하게 생각하니까!! 그리고 새로운 인지를 위한 발판이 되어주니까!!! 하고 느낄 수 있었다.</br></p>
+      <p class="text-bold" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(0, 102, 104);"></br>2022.12.28. <a href="https://m.blog.naver.com/momentsthatfleet/222968080600">블로그</a>에 쓴 글</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: rgb(255, 255, 255); z-index:10; padding: 10px; border:45px dotted rgb(97, 187, 255); ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(44, 100, 144);">학자의 역할이 사회의 사유를 대리하는 일이라는 구절을 읽은 적이 있다. 바빠서 제멋대로 편한대로 생각하기 쉽상인 세상에서 필요한 사유를 전적으로 (자기 삶의 전업으로) 하는 존재. 사유를 위해 학문과 여러 관심을 통해 사유력을 갖춘다. 자신의 사유를 객관적 설명력을 갖는 무언가로 만들어내 사회에 생각의 디딤돌을 만든다.</br>
+        예술가의 역할은 사회의 상상력을 전담하는 일이 아닐까 생각한다. 바빠서 겁나서 두려워서 해도 되나 싶어서 넘겨온 일들을 직접 해내고 실행하는 것이다. 그 점에서 소피 칼이 떠오른다. 탐정을 고용해 자신을 미행하도록 시키거나 낯선 자들과 동침하거나 연인에게 받은 이별편지를 서른 여 명의 사람들에게 해석해달라고 요청한 일 같은. 한번쯤 상상해봤지만 실행해보지 않은 별난 짓을 대신 해주는 존재. 또는 돌의 물성이나 조형요소들의 조합을 관찰하고 실험해 새로운 것을 만드는 류의 상상력도 있을 것이다. 예술가는 어떤 상상력을 실행해보려 연구하고 상상력을 극한까지 몰고 가서 결과물을 내보이는 존재다. 또는 사느라 바빠서 보지 못하는 삶의 어떤 측면을 집요하게 들여다보고 그 과정에서 늘어난 본인의 앎을 어떤 방식으로 드러내는 존재. 그렇게 함으로써 인류의 문화에 새로움과 신선함을 불어넣는다. 사람들이 불완전한 파편으로 스쳐보냈던 찰나의 상상력과 관찰들을 인정해주고 흥미로운 거리로 재탄생시킨다.</br></p>
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(97, 187, 255);"></br>여기서 새로 공개하는 글 >.<</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    <div class="textbox" style="position: relative; width: 80vw; margin-left: 6vw; margin-right: 10vw;  text-indent: 25px; background-color: white; z-index:10; padding: 10px; border:5px dotted black; ">
+      <p class="text-regular" style="display:inline;word-break: keep-all; font-size: 12pt; line-height: 18pt; color: rgb(129, 77, 14);">개인적 경험과 인상에 기반한 예술이 공감을 얻는 방식은 사회를 경유한다. 사회는 사람들이 경험한 공통의 기반으로, 예술이 개인적인 경험을 다른 사람이 공감할 수 있는 형태로 풀어낼 때 사회학적 관점이 중요한 역할을 할 수 있을 것 같다.</br></p>
+      <p class="text-bold" style="display:inline;word-break: keep-all; font-size: 9pt; line-height: 13pt; color: rgb(255, 196, 124);"></br>2020.11.28. 사회학과 예술의 관련성에 대해 고민하며 적어본 글 중에서.</p>
+    </div>
+    <article class="blank" style="height: 15vh"></article>
+
+    
+
+
+     
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="colorSection" id="signpost" data-color="signpost">
+
+    <article class="blank" style="height: 30vh"></article>
+  
+    <div class="info-box" style="position: relative; width: 85vw; height: 50vh; margin-left: 8vw; border-style: solid; border-color: #707070; border-width:1px; background-color: white; z-index:10;  overflow-y: auto; ">
+      <span class="info-left" style="display: inline-block; margin-left: 3%; width: 25%; vertical-align: top; border-style: none; ">
+        <p class="text-bold" style="vertical-align: top;font-size:11pt; line-height:16pt;">이론(사회학)과 예술 (2023).</p>
+        <p class="text-regular" style="font-size:11pt; line-height:16pt;vertical-align: top;">분류: collage writing.</p>
+      </span>
+      <span class="info-right" style="display: inline-block; margin-left: 4%; width: 60%; vertical-align: top; border-style: none;  overflow-y: auto; ">
+        <p class="text-bold" style="vertical-align: top;font-size:11pt; line-height:16pt;">정승은</br></br></p>
+        <p class="text-regular" style="font-size:11pt; line-height:16pt;vertical-align: top; overflow-y: auto; ">
+          
+        </p>
+      </span>
+    </div>
+  
+    <article class="blank" style="height: 70vh"></article>
+  
+  </div>
+
+
+
+
+
+
+
+
+  <div class="fixed-bottom" style="position: fixed; height: 7vh; top: 93vh;">
+    <img src="img/identity/logo2021.png" style="height: 4vh; margin-left: 5vw;">
+  </div>
+
+
+
+    <!--스크롤 시 배경색 변경-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script type="text/javascript">
+      $(window).scroll(function(){
+  
+        var $window = $(window),
+              $body = $('body'),
+              $colorSection = $('.colorSection');
+        
+        var scroll = $window.scrollTop() + ($window.height() / 3);
+  
+        $colorSection.each(function() {
+          var $this = $(this);
+          if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            $body.removeClass(function (index,css) {
+              return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+            });
+            $body.addClass('color-' + $(this).data('color'));
+          }
+        });
+      }).scroll();
+    </script>
+    </script>
+
+
+
+</body>
+</html>

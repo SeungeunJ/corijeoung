@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"  content="width=device-width, initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/news.css">
+  <!--<script src="p5.js"></script>-->
+  <script src="https://js.tosspayments.com/v1/payment-widget"></script>
+
+  <style>
+    body{background-color: black;}
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <div class="title" style="color: white;">상품 정보</div>
+  <p style="color: white;">토스 티셔츠</p>
+  <p style="color: white;">결제 금액: 15,000원</p>
+  
+  <!-- 결제 방법 영역-->
+  <div class="title" style="color: white;">결제 방법</div>
+  <div id="payment-method" style="color: white;"></div>
+  <div id="agreement" style="color: white;"></div>
+  <!-- 결제 버튼 -->
+<button id="payment-button" style="color: white;">결제하기</button>
+
+
+  <div class="top-menu"
+  style=" position: absolute; z-index: 10; width: 102vw; margin-left: -3.5vw; top: 1vh;
+  display: inline-block; text-align: center;">
+    <a href="http://jeoungseungeun.com/news.html" style="text-decoration: none;"><span style="color: white; font-size: 13.5pt; font-style: 'GothicA1-Regular';">news</span></a>
+    <a href="http://jeoungseungeun.com/index.html" style="text-decoration: none;"><span style="margin-left: 25vw; margin-right: 25vw; color: white; font-size: 13.5pt; font-style: 'GothicA1-Regular';">works</span></a>
+    <a href="http://jeoungseungeun.com/info.html" style="text-decoration: none;"><span style="color: white; font-size: 13.5pt; font-style: 'GothicA1-Regular';">info</span></a>
+  </div>
+
+  <article class="blank" style="height: 11.6vh;"></article>
+  <!--<div class="eng-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 13.5pt; line-height: 16pt; color: black;">Would you come across?</br></br>2022</br>interactive photography with installations</p>
+  </div>-->
+  <article class="blank" style="height: 24pt;"></article>
+  <div class="kor-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 10pt; line-height: 12pt; color: #e9f0d2;">소리, 자두, 조각</br></br>2023~2024</br>텍스트, 출판 프로젝트</p>
+  </div>
+
+
+
+
+  <article class="blank" style="height: 55pt;"></article>
+  <img src="img/소리언어자두조각/소리자두조각-표지-검은배경.jpg" style="width: 91vw; margin-left: 2vw;">
+  <article class="blank" style="height: 100pt;"></article>
+  <img src="img/소리언어자두조각/IMG_2090.JPG" style="width: 91vw; margin-left: 2vw;">
+  <!--<img src="img/소리언어자두조각/소리자두조각-내지-검은배경-p203204.jpg" style="width: 91vw; margin-left: 2vw; margin-bottom: -65pt;">-->
+  <img src="img/소리언어자두조각/소리자두조각-내지-검은배경-p082083.jpg" style="width: 91vw; margin-left: 2vw; margin-bottom: -40pt;">
+  <img src="img/소리언어자두조각/IMG_2102.JPG" style="width: 91vw; margin-left: 2vw;">
+  <img src="img/소리언어자두조각/IMG_2099.JPG" style="width: 91vw; margin-left: 2vw;">
+
+  <div class="kor-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 10pt; line-height: 15pt; color: #e9f0d2;">
+      부서진 조각들ᶳʰᵃᵗᵗᵉʳᵉᵈ ᵖᶤᵉᶜᵉᶳ 과 느낌표 !</br>
+“불길하게 여겨지기도 하는 나의 조각들. 동정해야 할 세계로 덮여버리고 마는 나의 조각들에- 당신들이 알고자 하는 여러 의문들에 대한 중요한 실마리가 있는 것 같다고. 말하고 싶었다. 적어도 나는 무언가가 깨질 때마다 더 멀리 가게 되었다고. 당신은 당신이 웃어 넘기거나 잠깐 안타깝게 바라보고는 고개를 돌려버렸던 이곳에 집중할 필요가 있다고. 이 소외된 앎을 빼고서 진리는 있을 수 없다고.”</br>
+난청hard of hearing으로 겪게 된 여러 소리 현상들과 그에 대한 사변들을 글로 적는 프로젝트. 소리를 잃은 몸, 의사소통에 불편함을 주는 몸, 장애와 비장애의 경계에 있는 몸을 통해서 철학하기를 시도한다. 들리는 세계와 비논리적으로 보이는 사변들을 솔직히 적어내면서, 소리, 언어, 물질세계에 대한 관념을 언러닝한다. 정상 인간 모델에서 벗어난 몸의 경험에 집중하며, 자연스레 인간중심주의에서 탈중심화한다.
+    </p>
+  </div>
+  <article class="blank" style="height: 24pt;"></article>
+
+
+  <!--<img src="img/소리언어자두조각/IMG_2098.JPG" style="width: 91vw; margin-left: 2vw;">
+  <img src="img/소리언어자두조각/소리자두조각-내지-검은배경-p082083.jpg" style="width: 91vw; margin-left: 2vw;">-->
+  <img src="img/소리언어자두조각/IMG_202405031203553.jpg" style="width: 91vw; margin-left: 2vw;">
+  
+
+  본문 소개
+  1.~에 대해
+  2.주제
+  3.어쩌고
+
+  목차
+
+  
+
+  <iframe width="350" height="197" src="https://www.youtube.com/embed/NkorusvT278?si=jpAB8lY-5FWzz6uZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!--<video controls>
+    <source src="img/소리언어자두조각/말하는영상1.mp4" type="video/mp4" style="width: 250; margin-left: 50;">
+  </video>-->
+  <!--<iframe width="91vw" height="205" src="img/소리언어자두조각/말하기영상1.MOV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="position: absolute; top: 10vh; left: 3vw;"></iframe>-->
+
+  <!--<article class="blank" style="height: 24pt;"></article>
+  <div class="kor-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 10pt; line-height: 15pt; color: black;">
+
+    </p>
+  </div>
+  <article class="blank" style="height: 4pt;"></article>
+  <div class="kor-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 10pt; line-height: 15pt; color: black;">
+
+    </p>
+  </div>-->
+  <article class="blank" style="height: 24pt;"></article>
+
+  
+
+
+  <!--<article class="blank" style="height: 50pt;"></article>
+  <hr style="border: solid 0.45pt #707070; width: 96vw; margin-top: -5pt; margin-bottom: -5pt;">
+  <article class="blank" style="height: 35pt;"></article>-->
+
+
+
+
+  <article class="blank" style="height: 30vh;"></article>
+  <div class="kor-info"
+  style="margin-left: 2vw; margin-right: 2vw;">
+    <p style="font-size: 7.5pt; line-height: 12pt; color: rgba(195,122,168,0.54)">Ⓒ 2024. Seungeun Jeoung All Rights Reserved.</p>
+  </div>
+
+  <div class="top-bluedeco"
+    style="width: 102vw; margin-left: -2vw; height: 7.3vh; top: 0.9vh; position: fixed; z-index: 5;
+    background: linear-gradient(to bottom, rgba(195,122,168,0), rgba(195,122,168,0.54), rgba(195,122,168,0))">
+  </div>
+
+  
+
+
+
+  <script>
+    const clientKey = 'test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq' // 상점을 특정하는 키
+    const customerKey = 'YbX2HuSlsC9uVJW6NMRMj' // 결제 고객을 특정하는 키
+    const amount = 15_000 // 결제 금액
+  
+    /*결제위젯 영역 렌더링*/
+    const paymentWidget = PaymentWidget(clientKey, customerKey) // 회원 결제 초기화
+    // const paymentWidget = PaymentWidget(clientKey, PaymentWidget.ANONYMOUS) // 비회원 결제 초기화
+    paymentMethods = paymentWidget.renderPaymentMethods('#payment-method', amount)
+    
+    /*약관 영역 렌더링*/
+    const paymentAgreement = paymentWidget.renderAgreement('#agreement')
+
+
+    /*결제요청 함수 정의*/
+		document.querySelector("#payment-button").addEventListener("click",()=>{
+		    paymentWidget.requestPayment({
+		    	orderId: 'AD8aZDpbzXs4EQa-UkIX6',
+		    	orderName: '토스 티셔츠 외 2건',
+		    	successUrl: 'http://localhost:8080/success',
+		    	failUrl: 'http://localhost:8080/fail',
+		    	customerEmail: 'customer123@gmail.com', 
+		    	customerName: '김토스'
+		    }).catch(function (error) {
+		    	if (error.code === 'USER_CANCEL') {
+		    	// 결제 고객이 결제창을 닫았을 때 에러 처리
+		    	} if (error.code === 'INVALID_CARD_COMPANY') {
+	            // 유효하지 않은 카드 코드에 대한 에러 처리
+	          }
+	      })  
+	  })
+  </script>
+
+</body>
+</html>
